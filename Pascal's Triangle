@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+
+vector<vector<long long int> > printPascal(int n)
+{
+  // Write your code here.
+  vector<vector<long long int> > v1;
+  for(int i=1; i<=n; i++){
+        vector<long long int> v;
+        long long int ans=1;
+        cout<<1<<" ";
+    for(int j=1; j<i; j++){
+        ans*=(i-j);
+        ans/=j;
+        cout<<ans<<" ";
+    }
+    cout<<'\n';
+  }
+  return v1;
+}
